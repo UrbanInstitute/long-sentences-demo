@@ -98,8 +98,8 @@ p font-family helvetica {
 	<div id="time"></div>
 	<div id="scroll"></div>
 	<div class="w-section section-video">
-		<video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload" class="w-embed w-video video-scroller">
-			<source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="images/long-sentences-storyboards.mp4"></source>
+		<video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload" class="w-embed w-video video-scroller" style="padding-top: 110px;">
+			<source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="images/long-sentences-storyboards.mp4" ></source>
   			<p>Sorry, your browser does not support the &lt;video&gt; element.</p>
 		</video>
 	</div>
@@ -124,8 +124,8 @@ var accel = 0;
 
 
 // ---- Values you can tweak: ----
-var accelamount = 0.005; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
-var bounceamount = 0.5; //value from 0 to 1 for how much backlash back and forth you want in the easing. 0 = no bounce whatsoever, 1 = lots and lots of bounce
+var accelamount = 0.0001; //How fast the video will try to catch up with the target position. 1 = instantaneous, 0 = do nothing.
+var bounceamount = 0.8; //value from 0 to 1 for how much backlash back and forth you want in the easing. 0 = no bounce whatsoever, 1 = lots and lots of bounce
 
 // pause video on load
 vid.pause();
